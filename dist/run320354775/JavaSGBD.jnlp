@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaSGBD.jnlp">
+    <information>
+        <title>JavaSGBD</title>
+        <vendor>Adeleste-ciel</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="10.0.1+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="JavaSGBD.jar" size="32741" download="eager"/>
+        <jar href="lib\junit-4.13-beta-3.jar" size="381075" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="javasgbd.JavaSGBD" name="JavaSGBD"/>
+</jnlp>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="751.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javasgbd.FXMLDocumentController">
+   <children>
+      <MenuBar layoutX="7.0" layoutY="2.0" prefHeight="31.0" prefWidth="751.0" style="-fx-background-color: gray;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.2897196261682243" layoutX="2.0" layoutY="63.0" prefHeight="521.0" prefWidth="751.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="519.0" prefWidth="158.0" style="-fx-background-color: black;">
+               <children>
+                  <TextArea fx:id="listdb" editable="false" layoutX="6.0" layoutY="50.0" prefHeight="461.0" prefWidth="201.0" promptText="list DataBse" style="-fx-background-color: yellow;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="50.0" />
+                  <Button fx:id="data" layoutX="8.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: gray;" text="Data Base List" textFill="#2b15d6" AnchorPane.bottomAnchor="478.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="523.0" style="-fx-background-color: gray;">
+               <children>
+                  <TextArea id="code" fx:id="code" layoutX="-5.0" layoutY="8.0" prefHeight="290.0" prefWidth="536.0" promptText="code SQL" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="229.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Lucida Fax Regular" size="14.0" />
+                     </font></TextArea>
+                  <Label fx:id="error" layoutX="-3.0" layoutY="298.0" prefHeight="31.0" prefWidth="536.0" style="-fx-background-color: orange;" text="       AFFICHE  MESSAGE " textFill="#0b454d" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="298.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="result" editable="false" layoutY="328.0" prefHeight="182.0" prefWidth="529.0" promptText="  Result" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font></TextArea>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <ToolBar layoutY="31.0" prefHeight="50.0" prefWidth="751.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="540.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
+        <items>
+            <Button fx:id="actualise" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: yellow;" text="Actualise" />
+            <Button fx:id="save" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: yellow;" text="Save File" />
+            <ComboBox id="database" fx:id="combodb" prefHeight="25.0" prefWidth="141.0" promptText="DataBase" style="-fx-background-color: #a0002;" />
+            <Button fx:id="run" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: yellow;" text="Run" />
+            <Button fx:id="slctrun" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: yellow;" text="SelectAndRun" />
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: yellow;" text="Delete" />
+            <Label prefHeight="25.0" prefWidth="201.0" text="      J@v@-SQL à votre service" textFill="#040217">
+               <font>
+                  <Font name="Lucida Sans Italic" size="14.0" />
+               </font>
+            </Label>
+            <Circle fill="DODGERBLUE" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="DODGERBLUE" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

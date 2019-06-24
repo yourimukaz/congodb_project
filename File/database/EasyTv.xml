@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DataBase name="EasyTv">
+    <Table name="chaineLocale">
+        <Colonne name="nomChaine" type="varchar(30)">
+            <cellule contenu="NULL"/>
+        </Colonne>
+    </Table>
+    <Table name="chaineLocale">
+        <Colonne name="nomChaine" type="varchar(30)">
+            <cellule contenu="NULL"/>
+        </Colonne>
+    </Table>
+    <Table name="chaineLocale">
+        <Colonne name="nomChaine" type="varchar(30)">
+            <cellule contenu="NULL"/>
+        </Colonne>
+    </Table>
+    <Table name="Radio">
+        <Colonne name="nameRadio" type="varchar(30)">
+            <cellule contenu="NULL"/>
+        </Colonne>
+    </Table>
+</DataBase>

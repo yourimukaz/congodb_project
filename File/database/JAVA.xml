@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DataBase name="JAVA">
+    <Table name="Declaration">
+        <Colonne name="nomvariable" type="varchar(30)">
+            <cellule contenu="NULL"/>
+        </Colonne>
+    </Table>
+    <Table name="SQL">
+        <Colonne name="nom" type="varchar(20)">
+            <cellule contenu="NULL"/>
+        </Colonne>
+    </Table>
+</DataBase>

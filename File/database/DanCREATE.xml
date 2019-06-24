@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DataBase name="DanCREATE">
+    <Table name="Joel">
+        <Colonne name="nom" type="varchar(15)">
+            <cellule contenu="NULL"/>
+        </Colonne>
+    </Table>
+</DataBase>
